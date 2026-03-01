@@ -103,6 +103,18 @@ body {
     transform: translateY(8px);
 }
 
+.hamburger.ativo {
+    background: transparent;
+}
+
+.hamburger.ativo::before {
+    transform: rotate(45deg);
+}
+
+.hamburger.ativo::after {
+    transform: rotate(-45deg);
+}
+
 /* Cabeçalho */
 .cabecalho {
     min-height: 100vh;
@@ -130,7 +142,6 @@ body {
 
 h1 {
     font-size: 3.5rem;
-    color: var(--primaria);
     font-weight: bold;
     margin: 0.5rem 0;
     background: linear-gradient(45deg, var(--primaria), var(--secundaria));
@@ -195,6 +206,12 @@ h1 {
     padding: 0 1rem;
 }
 
+.projetos-card-link {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+}
+
 .projetos-card {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
@@ -209,8 +226,9 @@ h1 {
 }
 
 .projetos-card:hover {
-    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3);
     transform: translateY(-5px);
+    border-color: var(--primaria);
 }
 
 .projetos-imagem {

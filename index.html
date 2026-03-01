@@ -53,14 +53,31 @@
     <section id="projetos" class="projetos">
         <h2 class="projetos-titulo">Meus Projetos</h2>
         <div class="projetos-caixa">
-            <div class="projetos-card">
-                <img src="https://filipesep.github.io/portifolio/img/unipets.png" alt="Projeto E-commerce de Petshop" class="projetos-imagem">
-                <div class="caixa-texto-projetos">
-                    <h3 class="info-projetos">E-commerce de Petshop</h3>
-                    <p class="paragrafo-projetos">E-commerce moderno com animações e design responsivo</p>
+            
+            <!-- Projeto 1 - E-commerce Petshop -->
+            <a href="https://filipesep.github.io/UNI-Pets/" target="_blank" class="projetos-card-link">
+                <div class="projetos-card">
+                    <img src="https://filipesep.github.io/portifolio/img/unipets.png" alt="Projeto E-commerce de Petshop" class="projetos-imagem">
+                    <div class="caixa-texto-projetos">
+                        <h3 class="info-projetos">E-commerce de Petshop</h3>
+                        <p class="paragrafo-projetos">E-commerce moderno com animações e design responsivo</p>
+                    </div>
                 </div>
-            </div>
+            </a>
+
+            <!-- Projeto 2 - Landing Page Cardápio -->
+            <a href="https://filipesep.github.io/cardapio/" target="_blank" class="projetos-card-link">
+                <div class="projetos-card">
+                    <img src="https://filipesep.github.io/portifolio/img/cardapio.jpg" alt="Landing Page de Cardápio Digital" class="projetos-imagem">
+                    <div class="caixa-texto-projetos">
+                        <h3 class="info-projetos">Cardápio Digital</h3>
+                        <p class="paragrafo-projetos">Landing page interativa para restaurante com cardápio dinâmico e design responsivo</p>
+                    </div>
+                </div>
+            </a>
+
             <!-- Adicione mais projetos aqui seguindo o mesmo padrão -->
+
         </div>
     </section>
 
@@ -98,7 +115,6 @@
 
             window.open(url, '_blank');
             
-            // Limpar formulário (opcional)
             document.getElementById('nome').value = '';
             document.getElementById('mensagem').value = '';
         }
@@ -112,8 +128,20 @@
                 menu.classList.toggle('ativo');
                 const expanded = menu.classList.contains('ativo');
                 menuMobile.setAttribute('aria-expanded', expanded);
+                
+                // Animar hamburger
+                const hamburger = document.querySelector('.hamburger');
+                hamburger.classList.toggle('ativo');
             });
         }
+
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('.menu-link').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('ativo');
+                menuMobile.setAttribute('aria-expanded', false);
+            });
+        });
     </script>
 </body>
 
