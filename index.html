@@ -34,8 +34,7 @@
     <main id="inicio" class="cabecalho">
         <div class="cabecalho-conteudo">
             <img src="https://filipesep.github.io/portifolio/img/eu.jpg"
-                alt="Filipe Gabriel, retrato profissional com expressão confiante e acessível"
-                class="foto-perfil">
+                alt="Filipe Gabriel, retrato profissional com expressão confiante e acessível" class="foto-perfil">
             <h1>Filipe Gabriel</h1>
             <p class="cabecalho-sub-titulo">Desenvolvedor Full Stack</p>
         </div>
@@ -53,11 +52,12 @@
     <section id="projetos" class="projetos">
         <h2 class="projetos-titulo">Meus Projetos</h2>
         <div class="projetos-caixa">
-            
+
             <!-- Projeto 1 - E-commerce Petshop -->
             <a href="https://filipesep.github.io/UNI-Pets/" target="_blank" class="projetos-card-link">
                 <div class="projetos-card">
-                    <img src="https://filipesep.github.io/portifolio/img/unipets.png" alt="Projeto E-commerce de Petshop" class="projetos-imagem">
+                    <img src="https://filipesep.github.io/portifolio/img/unipets.png"
+                        alt="Projeto E-commerce de Petshop" class="projetos-imagem">
                     <div class="caixa-texto-projetos">
                         <h3 class="info-projetos">E-commerce de Petshop</h3>
                         <p class="paragrafo-projetos">E-commerce moderno com animações e design responsivo</p>
@@ -68,10 +68,13 @@
             <!-- Projeto 2 - Landing Page Cardápio -->
             <a href="https://filipesep.github.io/cardapio/" target="_blank" class="projetos-card-link">
                 <div class="projetos-card">
-                    <img src="https://filipesep.github.io/portifolio/img/cardapio.png" alt="Landing Page de Cardápio Digital" class="projetos-imagem">
+                    <img src="https://filipesep.github.io/portifolio/img/cardapio.png"
+                        alt="Landing Page de Cardápio Digital" class="projetos-imagem">
                     <div class="caixa-texto-projetos">
                         <h3 class="info-projetos">Cardápio Digital</h3>
-                        <p class="paragrafo-projetos">Landing page interativa para restaurante com cardápio dinâmico e design responsivo</p>
+                        <p class="paragrafo-projetos">Landing page interativa para restaurante com cardápio dinâmico e
+                            design responsivo</p>
+                        <!-- Faltou o "e" no texto acima -->
                     </div>
                 </div>
             </a>
@@ -99,7 +102,7 @@
     <script>
         function enviarWhats(event) {
             event.preventDefault();
-            
+
             const nome = document.getElementById('nome').value.trim();
             const mensagem = document.getElementById('mensagem').value.trim();
             const telefone = '5511963915049';
@@ -109,12 +112,12 @@
                 return;
             }
 
-            const texto = `${nome}. ${mensagem}`;
+            const texto = `${nome}: ${mensagem}`;
             const msgFormatada = encodeURIComponent(texto);
             const url = `https://wa.me/${telefone}/?text=${msgFormatada}`;
 
             window.open(url, '_blank');
-            
+
             document.getElementById('nome').value = '';
             document.getElementById('mensagem').value = '';
         }
@@ -128,7 +131,7 @@
                 menu.classList.toggle('ativo');
                 const expanded = menu.classList.contains('ativo');
                 menuMobile.setAttribute('aria-expanded', expanded);
-                
+
                 // Animar hamburger
                 const hamburger = document.querySelector('.hamburger');
                 hamburger.classList.toggle('ativo');
