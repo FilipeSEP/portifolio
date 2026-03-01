@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio | Filipe Gabriel</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -23,6 +25,9 @@
                 <a href="#sobre" class="menu-link">Sobre</a>
             </li>
             <li>
+                <a href="#habilidades" class="menu-link">Habilidades</a>
+            </li>
+            <li>
                 <a href="#projetos" class="menu-link">Projetos</a>
             </li>
             <li>
@@ -34,9 +39,15 @@
     <main id="inicio" class="cabecalho">
         <div class="cabecalho-conteudo">
             <img src="https://filipesep.github.io/portifolio/img/eu.jpg"
-                alt="Filipe Gabriel, retrato profissional com expressão confiante e acessível" class="foto-perfil">
+                alt="Filipe Gabriel, retrato profissional com expressão confiante e acessível"
+                class="foto-perfil">
             <h1>Filipe Gabriel</h1>
             <p class="cabecalho-sub-titulo">Desenvolvedor Full Stack</p>
+            
+            <!-- Botão Download CV -->
+            <a href="caminho/do/seu/curriculo.pdf" download class="botao-cv">
+                <i class="fas fa-download"></i> Download CV
+            </a>
         </div>
     </main>
 
@@ -49,18 +60,94 @@
         </div>
     </section>
 
+    <!-- Seção Habilidades -->
+    <section id="habilidades" class="habilidades">
+        <h2 class="habilidades-titulo">Minhas Habilidades</h2>
+        <div class="habilidades-caixa">
+            
+            <div class="habilidade-card">
+                <i class="fab fa-html5 habilidade-icone" style="color: #e34f26;"></i>
+                <h3 class="habilidade-nome">HTML5</h3>
+                <div class="habilidade-bar">
+                    <div class="habilidade-nivel" style="width: 90%"></div>
+                </div>
+            </div>
+
+            <div class="habilidade-card">
+                <i class="fab fa-css3-alt habilidade-icone" style="color: #1572b6;"></i>
+                <h3 class="habilidade-nome">CSS3</h3>
+                <div class="habilidade-bar">
+                    <div class="habilidade-nivel" style="width: 85%"></div>
+                </div>
+            </div>
+
+            <div class="habilidade-card">
+                <i class="fab fa-js habilidade-icone" style="color: #f7df1e;"></i>
+                <h3 class="habilidade-nome">JavaScript</h3>
+                <div class="habilidade-bar">
+                    <div class="habilidade-nivel" style="width: 80%"></div>
+                </div>
+            </div>
+
+            <div class="habilidade-card">
+                <i class="fab fa-react habilidade-icone" style="color: #61dafb;"></i>
+                <h3 class="habilidade-nome">React</h3>
+                <div class="habilidade-bar">
+                    <div class="habilidade-nivel" style="width: 75%"></div>
+                </div>
+            </div>
+
+            <div class="habilidade-card">
+                <i class="fab fa-node habilidade-icone" style="color: #339933;"></i>
+                <h3 class="habilidade-nome">Node.js</h3>
+                <div class="habilidade-bar">
+                    <div class="habilidade-nivel" style="width: 70%"></div>
+                </div>
+            </div>
+
+            <div class="habilidade-card">
+                <i class="fab fa-java habilidade-icone" style="color: #007396;"></i>
+                <h3 class="habilidade-nome">Java</h3>
+                <div class="habilidade-bar">
+                    <div class="habilidade-nivel" style="width: 65%"></div>
+                </div>
+            </div>
+
+            <div class="habilidade-card">
+                <i class="fab fa-git-alt habilidade-icone" style="color: #f05032;"></i>
+                <h3 class="habilidade-nome">Git</h3>
+                <div class="habilidade-bar">
+                    <div class="habilidade-nivel" style="width: 85%"></div>
+                </div>
+            </div>
+
+            <div class="habilidade-card">
+                <i class="fas fa-database habilidade-icone" style="color: #4db33d;"></i>
+                <h3 class="habilidade-nome">MongoDB</h3>
+                <div class="habilidade-bar">
+                    <div class="habilidade-nivel" style="width: 60%"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <section id="projetos" class="projetos">
         <h2 class="projetos-titulo">Meus Projetos</h2>
         <div class="projetos-caixa">
-
+            
             <!-- Projeto 1 - E-commerce Petshop -->
-            <a href="https://filipesep.github.io/UNI-Pets/" target="_blank" class="projetos-card-link">
+            <a href="https://seu-link-do-projeto1.com" target="_blank" class="projetos-card-link">
                 <div class="projetos-card">
-                    <img src="https://filipesep.github.io/portifolio/img/unipets.png"
-                        alt="Projeto E-commerce de Petshop" class="projetos-imagem">
+                    <img src="https://filipesep.github.io/portifolio/img/unipets.png" alt="Projeto E-commerce de Petshop" class="projetos-imagem">
                     <div class="caixa-texto-projetos">
                         <h3 class="info-projetos">E-commerce de Petshop</h3>
                         <p class="paragrafo-projetos">E-commerce moderno com animações e design responsivo</p>
+                        <div class="projetos-techs">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">MongoDB</span>
+                        </div>
                     </div>
                 </div>
             </a>
@@ -68,24 +155,41 @@
             <!-- Projeto 2 - Landing Page Cardápio -->
             <a href="https://filipesep.github.io/cardapio/" target="_blank" class="projetos-card-link">
                 <div class="projetos-card">
-                    <img src="https://filipesep.github.io/portifolio/img/cardapio.png"
-                        alt="Landing Page de Cardápio Digital" class="projetos-imagem">
+                    <img src="https://filipesep.github.io/portifolio/img/cardapio.png" alt="Landing Page de Cardápio Digital" class="projetos-imagem">
                     <div class="caixa-texto-projetos">
                         <h3 class="info-projetos">Cardápio Digital</h3>
-                        <p class="paragrafo-projetos">Landing page interativa para restaurante com cardápio dinâmico e
-                            design responsivo</p>
-                        <!-- Faltou o "e" no texto acima -->
+                        <p class="paragrafo-projetos">Landing page interativa para restaurante com cardápio dinâmico e design responsivo</p>
+                        <div class="projetos-techs">
+                            <span class="tech-badge">HTML</span>
+                            <span class="tech-badge">CSS</span>
+                            <span class="tech-badge">JavaScript</span>
+                        </div>
                     </div>
                 </div>
             </a>
-
-            <!-- Adicione mais projetos aqui seguindo o mesmo padrão -->
 
         </div>
     </section>
 
     <section id="contato" class="contatos">
         <h2 class="contatos-titulo">Entre em Contato</h2>
+        
+        <!-- Redes Sociais -->
+        <div class="redes-sociais">
+            <a href="https://github.com/filipesep" target="_blank" class="rede-social">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/filipegabriel" target="_blank" class="rede-social">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://instagram.com/filipe.dev" target="_blank" class="rede-social">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+        </div>
+
         <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
             <div>
                 <label for="nome" class="label-hidden">Nome</label>
@@ -99,10 +203,22 @@
         </form>
     </section>
 
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <p class="rodape-copyright">
+                <i class="far fa-copyright"></i> 2024 Filipe Gabriel. Todos os direitos reservados.
+            </p>
+            <p class="rodape-creditos">
+                Desenvolvido com <i class="fas fa-heart" style="color: #ff4d4d;"></i> por Filipe Gabriel
+            </p>
+        </div>
+    </footer>
+
     <script>
         function enviarWhats(event) {
             event.preventDefault();
-
+            
             const nome = document.getElementById('nome').value.trim();
             const mensagem = document.getElementById('mensagem').value.trim();
             const telefone = '5511963915049';
@@ -117,7 +233,7 @@
             const url = `https://wa.me/${telefone}/?text=${msgFormatada}`;
 
             window.open(url, '_blank');
-
+            
             document.getElementById('nome').value = '';
             document.getElementById('mensagem').value = '';
         }
@@ -131,20 +247,23 @@
                 menu.classList.toggle('ativo');
                 const expanded = menu.classList.contains('ativo');
                 menuMobile.setAttribute('aria-expanded', expanded);
-
-                // Animar hamburger
+                
                 const hamburger = document.querySelector('.hamburger');
                 hamburger.classList.toggle('ativo');
             });
         }
 
-        // Fechar menu ao clicar em um link
         document.querySelectorAll('.menu-link').forEach(link => {
             link.addEventListener('click', () => {
                 menu.classList.remove('ativo');
                 menuMobile.setAttribute('aria-expanded', false);
+                document.querySelector('.hamburger').classList.remove('ativo');
             });
         });
+
+        // Atualizar ano automaticamente
+        document.querySelector('.rodape-copyright').innerHTML = 
+            `<i class="far fa-copyright"></i> ${new Date().getFullYear()} Filipe Gabriel. Todos os direitos reservados.`;
     </script>
 </body>
 
